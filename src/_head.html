@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <meta name="description" content="{{desc}}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23f9dde5'/><text x='32' y='42' font-size='30' text-anchor='middle' font-family='Georgia' fill='%233d2a2f'>L</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { petal: '#fff6f8', blush: '#f9dde5', rose: '#eaa9bb', 'rose-deep': '#c9708b', cocoa: '#3d2a2f', cream: '#fffaf6', ember: '#e7a183' },
+          fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], serif: ['"Instrument Serif"', 'serif'], sans: ['Manrope', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans {{bodyclass}}">
+
+<div class="loader" aria-hidden="true">
+  <div class="text-center">
+    <div class="loader-cup"><span class="steam"></span><span class="steam"></span><span class="steam"></span></div>
+    <p class="font-display text-2xl font-extrabold tracking-tight">InAmigos La Brew</p>
+    <p class="font-serif italic text-cocoa/70 mt-1">brewing your table…</p>
+    <div class="loader-bar mx-auto"><div class="loader-fill"></div></div>
+  </div>
+</div>
+<div class="curtain" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <nav class="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-5 md:px-10">
+    <a href="index.html" class="nav-logo font-display text-xl font-extrabold tracking-tight">InAmigos La Brew</a>
+    <div class="hidden items-center gap-9 text-[15px] font-semibold md:flex">
+      <a href="index.html" class="nav-link" {{cur_home}}>Home</a>
+      <a href="menu.html" class="nav-link" {{cur_menu}}>Menu</a>
+      <a href="about.html" class="nav-link" {{cur_about}}>Our Story</a>
+      <a href="contact.html" class="nav-link" {{cur_contact}}>Visit</a>
+      <a href="contact.html#reserve" data-magnetic class="rounded-full bg-white px-5 py-2.5 text-cocoa shadow-sm transition hover:bg-blush">Reserve a table</a>
+    </div>
+    <button class="menu-btn relative z-50 p-2 md:hidden" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu md:hidden">
+  <div class="flex h-full flex-col justify-center gap-4 px-8">
+    <a href="index.html" class="font-display text-5xl font-extrabold">Home</a>
+    <a href="menu.html" class="font-display text-5xl font-extrabold">Menu</a>
+    <a href="about.html" class="font-display text-5xl font-extrabold">Our Story</a>
+    <a href="contact.html" class="font-display text-5xl font-extrabold">Visit</a>
+    <a href="contact.html#reserve" class="mt-6 w-max rounded-full bg-cocoa px-6 py-3 font-semibold text-white">Reserve a table</a>
+  </div>
+</div>

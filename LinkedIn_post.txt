@@ -1,0 +1,21 @@
+LinkedIn post (attach a screen recording of the scroll tour if you can, plus 3 or 4 screenshots, and tag InAmigos Foundation)
+--------------------------------------------------------------------------------------------------------------------------
+
+For Task 3 of my internship at InAmigos Foundation, the brief was simple: build a complete website using AI tools.
+
+I picked a concept café, InAmigos La Brew, and wanted the homepage to feel like walking into the place. As you scroll, the camera moves from the pink street front, through the door, across the room to a window table, rises over a latte and then glides past the cake counter. Every page works the same way with a different corner of the same café.
+
+How it was made:
+1. The café images and all the camera-move videos were generated with open AI models on Hugging Face (FLUX for the images, Wan 2.2 for image-to-video), each clip starting from the last frame of the previous one so it feels like one continuous take.
+2. The clips were turned into frame sequences that play as you scroll.
+3. The site itself was built with an AI coding assistant (Claude) using HTML, Tailwind CSS, GSAP ScrollTrigger and Lenis smooth scrolling.
+
+It has a home page, menu with filters, our story page and a visit page with a booking form and FAQ, and it works on phones too.
+
+Biggest takeaway: AI makes the first draft fast, but the real work is in directing it, fixing colour drift between clips, choosing what to keep and making it all feel like one place.
+
+Note: La Brew is a fictional café made for this task.
+
+Thank you InAmigos Foundation for the learning opportunity!
+
+#InAmigos #InAmigosFoundation #Internship #AI #WebDesign #GSAP #HuggingFace #GenerativeAI #LearningByDoing

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit &amp; Reserve · InAmigos La Brew</title>
+  <meta name="description" content="Find InAmigos La Brew in Koregaon Park, Pune. Opening hours, directions, table reservations and answers to common questions.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><circle cx='32' cy='32' r='30' fill='%23f9dde5'/><text x='32' y='42' font-size='30' text-anchor='middle' font-family='Georgia' fill='%233d2a2f'>L</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { petal: '#fff6f8', blush: '#f9dde5', rose: '#eaa9bb', 'rose-deep': '#c9708b', cocoa: '#3d2a2f', cream: '#fffaf6', ember: '#e7a183' },
+          fontFamily: { display: ['"Bricolage Grotesque"', 'sans-serif'], serif: ['"Instrument Serif"', 'serif'], sans: ['Manrope', 'sans-serif'] }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-sans ">
+
+<div class="loader" aria-hidden="true">
+  <div class="text-center">
+    <div class="loader-cup"><span class="steam"></span><span class="steam"></span><span class="steam"></span></div>
+    <p class="font-display text-2xl font-extrabold tracking-tight">InAmigos La Brew</p>
+    <p class="font-serif italic text-cocoa/70 mt-1">brewing your table…</p>
+    <div class="loader-bar mx-auto"><div class="loader-fill"></div></div>
+  </div>
+</div>
+<div class="curtain" aria-hidden="true"></div>
+
+<header class="site-nav">
+  <nav class="mx-auto flex max-w-[1400px] items-center justify-between px-5 py-5 md:px-10">
+    <a href="index.html" class="nav-logo font-display text-xl font-extrabold tracking-tight">InAmigos La Brew</a>
+    <div class="hidden items-center gap-9 text-[15px] font-semibold md:flex">
+      <a href="index.html" class="nav-link" >Home</a>
+      <a href="menu.html" class="nav-link" >Menu</a>
+      <a href="about.html" class="nav-link" >Our Story</a>
+      <a href="contact.html" class="nav-link" aria-current="page">Visit</a>
+      <a href="contact.html#reserve" data-magnetic class="rounded-full bg-white px-5 py-2.5 text-cocoa shadow-sm transition hover:bg-blush">Reserve a table</a>
+    </div>
+    <button class="menu-btn relative z-50 p-2 md:hidden" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </nav>
+</header>
+
+<div class="mobile-menu md:hidden">
+  <div class="flex h-full flex-col justify-center gap-4 px-8">
+    <a href="index.html" class="font-display text-5xl font-extrabold">Home</a>
+    <a href="menu.html" class="font-display text-5xl font-extrabold">Menu</a>
+    <a href="about.html" class="font-display text-5xl font-extrabold">Our Story</a>
+    <a href="contact.html" class="font-display text-5xl font-extrabold">Visit</a>
+    <a href="contact.html#reserve" class="mt-6 w-max rounded-full bg-cocoa px-6 py-3 font-semibold text-white">Reserve a table</a>
+  </div>
+</div>
+<main>
+  <section class="scrub" data-seq="contact" data-count="81" data-length="400" aria-label="Walking back out to the street">
+    <div class="scrub-stage">
+      <canvas aria-hidden="true"></canvas>
+      <div class="scene intro left-5 top-28 md:left-10" data-from="1" data-to="32" data-keep-start>
+        <p class="intro-fade text-xs font-bold uppercase tracking-[.3em] text-white scene-shadow">Visit us</p>
+        <h1 class="mt-3 font-display text-[15vw] font-extrabold leading-[.86] tracking-[-0.04em] scene-shadow md:text-[9vw]" data-split>See you tonight.</h1>
+      </div>
+      <div class="scene left-5 top-28 md:left-10" data-from="48" data-to="81" data-keep-end>
+        <p class="text-xs font-bold uppercase tracking-[.3em] text-white/90 scene-shadow">The little pink house on</p>
+        <p class="mt-2 font-display text-5xl font-extrabold leading-[.95] tracking-tight scene-shadow md:text-7xl">Rosewood Lane,<br>Koregaon Park</p>
+      </div>
+      <div class="scrub-progress"><span></span></div>
+    </div>
+  </section>
+
+  <!-- info -->
+  <section class="mx-auto max-w-[1400px] px-5 py-24 md:px-10 md:py-32">
+    <div class="grid gap-10 md:grid-cols-3">
+      <div data-reveal>
+        <p class="text-xs font-bold uppercase tracking-[.3em] text-rose-deep">Address</p>
+        <p class="mt-4 font-display text-2xl font-extrabold leading-snug">12 Rosewood Lane, Koregaon Park, Pune, Maharashtra 411001</p>
+        <p class="mt-2 text-cocoa/65">Two minutes from the Lane 6 bus stop. Street parking after 7 pm.</p>
+      </div>
+      <div data-reveal data-delay=".1">
+        <p class="text-xs font-bold uppercase tracking-[.3em] text-rose-deep">Opening hours</p>
+        <dl class="mt-4 space-y-2 text-lg">
+          <div class="flex justify-between border-b border-cocoa/10 pb-2"><dt>Monday to Thursday</dt><dd class="font-semibold">8 am to 10 pm</dd></div>
+          <div class="flex justify-between border-b border-cocoa/10 pb-2"><dt>Friday to Sunday</dt><dd class="font-semibold">8 am to 11:30 pm</dd></div>
+          <div class="flex justify-between"><dt>Kitchen closes</dt><dd class="font-semibold">10:30 pm</dd></div>
+        </dl>
+        <p class="mt-3 text-sm font-semibold" id="open-now"></p>
+      </div>
+      <div data-reveal data-delay=".2">
+        <p class="text-xs font-bold uppercase tracking-[.3em] text-rose-deep">Say hello</p>
+        <p class="mt-4 font-display text-2xl font-extrabold">hello@inamigoslabrew.cafe</p>
+        <p class="mt-1 font-display text-2xl font-extrabold">+91 98765 43210</p>
+        <p class="mt-2 text-cocoa/65">We reply to emails within a day.</p>
+      </div>
+    </div>
+    <div class="mt-16 overflow-hidden rounded-[28px] border border-cocoa/10" data-reveal>
+      <iframe title="Map of Koregaon Park, Pune" src="https://maps.google.com/maps?q=Koregaon%20Park%2C%20Pune&z=15&output=embed" class="h-[380px] w-full grayscale-[40%] sepia-[15%]" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <!-- reserve -->
+  <section id="reserve" class="bg-blush">
+    <div class="mx-auto grid max-w-[1400px] gap-14 px-5 py-24 md:grid-cols-12 md:px-10 md:py-32">
+      <div class="md:col-span-5">
+        <h2 class="font-display text-5xl font-extrabold leading-[.95] tracking-tight md:text-7xl" data-split>Reserve a table.</h2>
+        <p class="mt-6 max-w-md text-lg text-cocoa/70" data-reveal>Tell us when you're coming and how many of you there are. We'll confirm by email. For groups bigger than 8, write to us directly.</p>
+        <div class="img-mask mt-10 hidden aspect-[4/3] md:block" data-reveal><img data-parallax src="assets/frames/home/lg/0100.webp" alt="Inside the café" loading="lazy"></div>
+      </div>
+      <form id="reserve-form" class="md:col-span-6 md:col-start-7" novalidate data-reveal>
+        <div class="grid gap-x-8 gap-y-2 sm:grid-cols-2">
+          <label class="block"><span class="text-sm font-semibold">Your name</span><input class="field" name="name" autocomplete="name" required minlength="2"><span class="error-text block"></span></label>
+          <label class="block"><span class="text-sm font-semibold">Email</span><input class="field" type="email" name="email" autocomplete="email" required><span class="error-text block"></span></label>
+          <label class="block"><span class="text-sm font-semibold">Date</span><input class="field" type="date" name="date" required><span class="error-text block"></span></label>
+          <label class="block"><span class="text-sm font-semibold">Time</span>
+            <select class="field" name="time" required>
+              <option value="">Choose a time</option>
+              <option>8:00 am</option><option>10:00 am</option><option>12:30 pm</option><option>3:00 pm</option><option>5:30 pm</option><option>7:00 pm</option><option>8:30 pm</option><option>9:30 pm</option>
+            </select><span class="error-text block"></span></label>
+          <div class="sm:col-span-2">
+            <span class="text-sm font-semibold">Guests</span>
+            <div class="mt-3 flex items-center gap-4">
+              <button type="button" class="guest-btn grid h-11 w-11 place-items-center rounded-full border border-cocoa/20 text-xl" data-step="-1" aria-label="Fewer guests">−</button>
+              <output id="guests" class="w-10 text-center font-display text-3xl font-extrabold">2</output>
+              <button type="button" class="guest-btn grid h-11 w-11 place-items-center rounded-full border border-cocoa/20 text-xl" data-step="1" aria-label="More guests">+</button>
+            </div>
+          </div>
+          <label class="mt-4 block sm:col-span-2"><span class="text-sm font-semibold">Anything we should know? <span class="font-normal text-cocoa/50">(optional)</span></span><textarea class="field resize-none" name="note" rows="3" placeholder="Birthday, window seat, allergies…"></textarea></label>
+        </div>
+        <button type="submit" data-magnetic class="mt-8 inline-flex items-center gap-3 rounded-full bg-cocoa px-7 py-3.5 font-semibold text-white transition hover:bg-rose-deep">Request booking <span aria-hidden="true">→</span></button>
+        <p class="mt-4 text-sm text-cocoa/50">This is a demo site, so no booking is actually sent.</p>
+        <div id="form-success" class="mt-6 hidden rounded-2xl bg-petal p-6" role="status"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="mx-auto max-w-[1000px] px-5 py-24 md:px-10 md:py-32">
+    <h2 class="font-display text-5xl font-extrabold tracking-tight md:text-6xl" data-split>Good to know</h2>
+    <div class="mt-12 divide-y divide-cocoa/10 border-y border-cocoa/10">
+      <div class="faq" data-reveal>
+        <button class="flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="font-display text-xl font-extrabold md:text-2xl">Do I need to book?</span><span class="plus text-3xl font-light text-rose-deep" aria-hidden="true">+</span></button>
+        <div class="faq-a"><div><p class="pb-6 pr-10 text-lg text-cocoa/70">No, walk-ins are always welcome. Booking helps on Friday and Saturday evenings and for groups of five or more.</p></div></div></div>
+      <div class="faq" data-reveal>
+        <button class="flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="font-display text-xl font-extrabold md:text-2xl">Do you have vegan options?</span><span class="plus text-3xl font-light text-rose-deep" aria-hidden="true">+</span></button>
+        <div class="faq-a"><div><p class="pb-6 pr-10 text-lg text-cocoa/70">Yes. Oat and almond milk are available for every drink, and the hibiscus tea, masala chai with oat milk, biscotti and pink pasta without cheese are fully vegan.</p></div></div></div>
+      <div class="faq" data-reveal>
+        <button class="flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="font-display text-xl font-extrabold md:text-2xl">Can I work from the café?</span><span class="plus text-3xl font-light text-rose-deep" aria-hidden="true">+</span></button>
+        <div class="faq-a"><div><p class="pb-6 pr-10 text-lg text-cocoa/70">Of course. There is free Wi-Fi and plenty of sockets along the window wall. On weekend evenings we ask laptop users to share the big tables.</p></div></div></div>
+      <div class="faq" data-reveal>
+        <button class="flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="font-display text-xl font-extrabold md:text-2xl">Is the café pet friendly?</span><span class="plus text-3xl font-light text-rose-deep" aria-hidden="true">+</span></button>
+        <div class="faq-a"><div><p class="pb-6 pr-10 text-lg text-cocoa/70">Dogs are welcome in the garden seating at the back. We keep water bowls and a jar of dog biscuits by the door.</p></div></div></div>
+      <div class="faq" data-reveal>
+        <button class="flex w-full items-center justify-between gap-6 py-6 text-left" aria-expanded="false"><span class="font-display text-xl font-extrabold md:text-2xl">Do you host private events?</span><span class="plus text-3xl font-light text-rose-deep" aria-hidden="true">+</span></button>
+        <div class="faq-a"><div><p class="pb-6 pr-10 text-lg text-cocoa/70">Yes, the garden can be booked for birthdays and small gatherings of up to 20 people. Email us with the date and we&#x27;ll send options.</p></div></div></div>
+    </div>
+  </section>
+</main>
+<footer class="relative overflow-hidden bg-cocoa text-petal">
+  <div class="mx-auto max-w-[1400px] px-5 pt-20 pb-10 md:px-10">
+    <div class="grid gap-12 md:grid-cols-12">
+      <div class="md:col-span-5">
+        <p class="font-serif text-4xl italic leading-tight text-rose md:text-5xl">Slow evenings,<br>pink cups.</p>
+        <a href="contact.html#reserve" data-magnetic class="mt-8 inline-flex items-center gap-3 rounded-full bg-rose px-6 py-3 font-semibold text-cocoa transition hover:bg-blush">Reserve a table <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="md:col-span-2">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[.2em] text-petal/50">Explore</p>
+        <ul class="space-y-2">
+          <li><a class="hover:text-rose" href="index.html">Home</a></li>
+          <li><a class="hover:text-rose" href="menu.html">Menu</a></li>
+          <li><a class="hover:text-rose" href="about.html">Our Story</a></li>
+          <li><a class="hover:text-rose" href="contact.html">Visit &amp; Contact</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-2">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[.2em] text-petal/50">Hours</p>
+        <p>Mon to Thu<br>8 am to 10 pm</p>
+        <p class="mt-2">Fri to Sun<br>8 am to 11:30 pm</p>
+      </div>
+      <div class="md:col-span-3">
+        <p class="mb-4 text-xs font-bold uppercase tracking-[.2em] text-petal/50">Find us</p>
+        <p>12 Rosewood Lane, Koregaon Park<br>Pune, Maharashtra 411001</p>
+        <p class="mt-2">hello@inamigoslabrew.cafe</p>
+      </div>
+    </div>
+    <p class="mt-20 select-none font-display text-[18vw] font-extrabold leading-[.8] tracking-tighter text-petal/[.07] md:text-[15vw]">La Brew</p>
+    <div class="mt-6 flex flex-col gap-2 border-t border-petal/10 pt-6 text-sm text-petal/50 md:flex-row md:justify-between">
+      <p>© <span data-year></span> InAmigos La Brew. A concept website for a fictional café.</p>
+      <p>Made with AI tools by Saksham Sinha for the InAmigos Foundation internship, Task 3.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="assets/js/scrub.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/pages.js"></script>
+</body>
+</html>
